@@ -19,6 +19,10 @@ function KlevLogo({ size = 'large' }: { size: 'large' | 'small' }) {
             src="/K'leva.png" 
             alt="K'lev.ai" 
             className="h-7 w-auto object-contain"
+            style={{
+              mixBlendMode: 'screen',
+              filter: 'drop-shadow(0 0 6px rgba(0, 174, 187, 0.75))'
+            }}
             onError={() => setUseFallback(true)} 
           />
         ) : (
@@ -44,12 +48,21 @@ function KlevLogo({ size = 'large' }: { size: 'large' | 'small' }) {
         <img 
           src="/K'leva.png" 
           alt="K'lev.ai Logo" 
-          className="h-20 md:h-28 object-contain"
+          className="h-36 md:h-52 object-contain transition-all duration-500 hover:scale-[1.03] select-none"
+          style={{
+            mixBlendMode: 'screen',
+            filter: 'drop-shadow(0 0 20px rgba(0, 174, 187, 0.8)) drop-shadow(0 0 40px rgba(245, 166, 35, 0.5))'
+          }}
           onError={() => setUseFallback(true)} 
         />
       ) : (
         <div className="flex flex-col items-center justify-center">
-          <div className="flex items-baseline font-sans text-5xl md:text-7xl font-semibold tracking-tight text-white animate-fade-in">
+          <div 
+            className="flex items-baseline font-sans text-6xl md:text-8xl font-bold tracking-tight text-white animate-fade-in"
+            style={{
+              textShadow: '0 0 20px rgba(0, 174, 187, 0.8), 0 0 40px rgba(245, 166, 35, 0.5)'
+            }}
+          >
             <span>K'lev</span>
             <span className="text-white">.</span>
             <span className="text-[#F5A623]">a</span>
@@ -57,7 +70,7 @@ function KlevLogo({ size = 'large' }: { size: 'large' | 'small' }) {
           </div>
         </div>
       )}
-      <span className="text-[9px] md:text-[10px] text-[#A0A0A0] font-sans tracking-[0.2em] mt-3 uppercase opacity-80">
+      <span className="text-[10px] md:text-[11px] text-[#A0A0A0] font-sans tracking-[0.25em] mt-5 uppercase opacity-80 font-medium">
         powered by TM Media Solutions ®
       </span>
     </div>
