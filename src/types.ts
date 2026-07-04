@@ -15,7 +15,7 @@ export interface Layer {
   evaluationMetrics: string[];
 }
 
-export type PersonaType = 'mzansi_elder' | 'soweto_youth' | 'ubuntu_corporate' | 'standard_formal';
+export type PersonaType = 'mzansi_elder' | 'soweto_youth' | 'ubuntu_corporate' | 'standard_formal' | 'oom_kleva' | 'kasi_clever' | 'safety_outie' | 'zero_bra' | 'sgela';
 
 export interface PersonaConfig {
   id: PersonaType;

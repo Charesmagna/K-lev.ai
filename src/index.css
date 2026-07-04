@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @keyframes spin-slow {
@@ -9,7 +10,7 @@
   }
 }
 
-@keyframes siri-wave {
+@keyframes lizzy-wave {
   0%, 100% {
     transform: scaleY(0.4);
     opacity: 0.5;
@@ -21,6 +22,26 @@
 }
 
 @theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
   --animate-spin-slow: spin-slow 12s linear infinite;
-  --animate-siri-wave: siri-wave 1.2s ease-in-out infinite;
+  --animate-lizzy-wave: lizzy-wave 1.2s ease-in-out infinite;
+  
+  --color-primary-black: #0A0A0A;
+  --color-charcoal: #1C1C1C;
+  --color-turquoise-accent: #00AEBB;
+  --color-warm-gold: #F5A623;
+  --color-mzansi-green: #007A4D;
+  --color-soft-grey: #A0A0A0;
 }
+
+/* Custom background beadwork border styling */
+.beadwork-border {
+  background-image: repeating-linear-gradient(45deg, 
+    #00AEBB 0px, #00AEBB 4px, 
+    #F5A623 4px, #F5A623 8px, 
+    #007A4D 8px, #007A4D 12px, 
+    #E11D48 12px, #E11D48 16px
+  );
+}
+
