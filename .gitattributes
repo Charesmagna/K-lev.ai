@@ -1,0 +1,31 @@
+# Binary files — never touch these as text
+*.jar binary
+*.aar binary
+*.apk binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.keystore binary
+*.so binary
+*.class binary
+
+# Text files — force LF line endings
+*.java text eol=lf
+*.kt text eol=lf
+*.kts text eol=lf
+*.xml text eol=lf
+*.json text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.gradle text eol=lf
+*.properties text eol=lf
+gradlew text eol=lf

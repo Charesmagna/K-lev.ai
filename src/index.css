@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes siri-wave {
+  0%, 100% {
+    transform: scaleY(0.4);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleY(1.4);
+    opacity: 1;
+  }
+}
+
+@theme {
+  --animate-spin-slow: spin-slow 12s linear infinite;
+  --animate-siri-wave: siri-wave 1.2s ease-in-out infinite;
+}

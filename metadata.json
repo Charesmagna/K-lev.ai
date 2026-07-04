@@ -1,0 +1,6 @@
+{
+  "name": "K'lev.ai national Knowledge OS",
+  "description": "Interactive architectural blueprint and multi-layer simulation playground for K'lev.ai, South Africa's national knowledge intelligence layer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
